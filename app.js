@@ -7,6 +7,14 @@ $(document).ready(function() {
       dataType: "json",
       success: function(data) {
         console.log(data);
+
+        var $quote = $('<p>').text(data.quote);
+        var $author = $('<h3>').text(data.author);
+
+        $('.quote')
+          .append($quote)
+          .append($author);
+
       },
       error: function() { alert('boo!'); },
       beforeSend: setHeader
