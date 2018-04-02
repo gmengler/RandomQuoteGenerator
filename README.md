@@ -12,4 +12,4 @@ Intermediate front-end development freeCodeCamp project.
 * HTML
 * CSS
 * Bootstrap
-* Mashape random quote API [Link](https://market.mashape.com/andruxnet/random-famous-quotes)
+* Mashape random quote API: [Link](https://market.mashape.com/andruxnet/random-famous-quotes)
