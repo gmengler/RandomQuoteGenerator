@@ -32,6 +32,18 @@ function showQuote(response) {
 
   $('#quote').text(response.quote);
   $('#author').text(response.author);
+
+  twttr.widgets.createShareButton(
+    '/',
+    document.getElementById('twitter'), {
+      text: response.quote + " - " + response.author
+    }
+  );
+}
+
+function shareTweet() {
+  var twtLink = 'http://twitter.com/home?status=' + encodeURIComponent(response.quote + " " + response.author);
+  window.open(twtLink);
 }
 
 var colors = [

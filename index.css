@@ -13,3 +13,8 @@
 body {
   transition:background-color 1.5s ease;
 }
+
+#twitter {
+  text-align: left;
+  margin-left: 30px;
+}
