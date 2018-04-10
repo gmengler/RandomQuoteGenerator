@@ -13,6 +13,7 @@ function getQuote() {
     responseType: "json",
     success: function(response) {
       showQuote(response);
+      $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + response.quote + '" - ' + response.author));
     },
     error: function() {
       alert('Error retreiving quote');
@@ -32,18 +33,6 @@ function showQuote(response) {
 
   $('#quote').text(response.quote);
   $('#author').text(response.author);
-
-  twttr.widgets.createShareButton(
-    '/',
-    document.getElementById('twitter'), {
-      text: response.quote + " - " + response.author
-    }
-  );
-}
-
-function shareTweet() {
-  var twtLink = 'http://twitter.com/home?status=' + encodeURIComponent(response.quote + " " + response.author);
-  window.open(twtLink);
 }
 
 var colors = [

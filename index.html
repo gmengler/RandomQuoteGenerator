@@ -15,10 +15,10 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script defer src="./static/fontawesome-all.js"></script>
 </head>
 
 <body>
-
   <div id="quoteBox" class="col-md-6 col-md-offset-3 text-center">
     <h2>“What a curious power words have.”</h2>
     <p>- Tadeusz Borowski</p>
@@ -26,15 +26,13 @@
       <div class="panel-body">
         <p id="quote"></p>
         <h4 id="author"></h4>
-
       </div>
       <div id="twitter">
-        <!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a> -->
+        <a class="btn btn-primary twitterBtn" id="tweet-quote" data-show-count="false">Tweet <i class="fab fa-twitter"></i></a>
       </div>​
     </div>
     <button id="getQuote" class="btn btn-primary btn-lg round btn-block">New Quote</button>
   </div>
-
 </body>
 
 </html>
