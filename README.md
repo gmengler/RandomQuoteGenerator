@@ -1,5 +1,3 @@
-# Currently work in progress
-
 # Random Quote Generator
 
 Intermediate front-end development freeCodeCamp project.
@@ -13,3 +11,5 @@ Intermediate front-end development freeCodeCamp project.
 * CSS
 * Bootstrap
 * Mashape random quote API: [Link](https://market.mashape.com/andruxnet/random-famous-quotes)
+* Twitter API
+* Font Awesome icons
