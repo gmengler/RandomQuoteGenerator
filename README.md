@@ -2,6 +2,11 @@
 
 Intermediate front-end development freeCodeCamp project.
 
+## User Stories
+
+* Click a button to show a new quote
+* Click a button to tweet out a quote
+
 ## Technologies Used
 
 * JavaScript
