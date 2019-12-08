@@ -9,7 +9,7 @@ function getQuote() {
   $(document.body).css('background-color', colors[Math.floor(Math.random() * colors.length)]);
   $.ajax({
     type: "POST",
-    url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous",
+    url: "https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=1&cat=famous",
     responseType: "json",
     success: function(response) {
       showQuote(response);
@@ -22,17 +22,19 @@ function getQuote() {
   });
 
   function setHeader(xhr) {
-    xhr.setRequestHeader("X-Mashape-Key", "pmTSpn6I45mshpuPkHokTQ01lAo1p1ugEH1jsnoOS19Gk3KQvB");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.setRequestHeader("x-rapidapi-key", "sUHZ623ia5mshGZPh9XMvWs06Ltcp1zBgy1jsnyx6wQE0Wwnxl");
+    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
     xhr.setRequestHeader("Accept", "application/json");
   }
 }
 
 function showQuote(response) {
   console.log(response);
+  console.log(response[0].quote);
+  console.log(response[0].author);
 
-  $('#quote').text(response.quote);
-  $('#author').text(response.author);
+  $('#quote').text(response[0].quote);
+  $('#author').text(response[0].author);
 }
 
 var colors = [
